@@ -20,6 +20,7 @@ const playHand = () => {
 
 
 let matches = 0
+let nonMatch = 0
 
 const matchCards = () => {
 	console.log('I will check your cards!', handOfCards)
@@ -30,21 +31,36 @@ const matchCards = () => {
 		matches++
 		let selector = '.' + handOfCards[0]
 		$(selector).remove()
-		
-		
-		$('#matches')[0].innerText = `You've got ` + matches + `total!`
+
+		$('#matches')[0].innerText = `You've got ` + matches + ` total matches!`
 
 
 		console.log($('#matches'))
 		$('body').append(`<h2>It's a match!</h2>`)
 	} else {
 		$('body').append(`<h2>It's NOT a match!</h2>`)
+		nonMatch++
+		console.log(nonMatch)
+	}
+		if (nonMatch === 3) {
+			gameLose()
+		
+
 
 	}
 	handOfCards = []
 }
 
 
+const gameLose = () => {
+	 
+     document.location.reload(true);
+     alert("You lost the game, press start to play again.")
+   }
+
+    handOfCards = []
+
+ 
 
 
 

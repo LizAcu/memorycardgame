@@ -9,7 +9,7 @@ body {
 
 .container {
 	display: flex;
-	justify-content: space-around; 
+	justify-content: space-between; 
 	border: 1px solid black;
 	background-color: rgb(4, 72, 191);
 	width: 1050px;
@@ -17,6 +17,7 @@ body {
 	border-radius: 15px;
 	opacity: .9;
 	margin: auto;
+	flex-wrap: wrap;
 
 
 
@@ -25,20 +26,11 @@ body {
 
 
 
-/*.card:nth-child(1) {
-	background-image: url('img_files/ocean.png');
-	background-size: contain;
-	width: 122px;
-	height: 194px;
 
-
-
-}
-*/
 
 .card {
-		border: 1px solid black;
-	background-repeat: no-repeat;
+	border: 1px solid black;
+	background-size: contain ;
 	grid-template-columns: 60px 60px;
 	grid-row-gap: 1em;
 	display: grid;
@@ -46,48 +38,25 @@ body {
 	border-radius: 15px;
 	height: 12em;
 	max-width: 100%;
-	/*width: 122px;*/
-	/*height: 194px;*/
 }
 
 .sunset {
 	background-image: url('img_files/ocean.png');
-	background-size: cover;
+	
 }
 
 
 
 .fish { 
 		background-image: url('img_files/fish_ocean.png');
-		background-size: cover;
 		width: 122px;
 		height: 194px;
 
 		
 }
-
-/*.card-back:nth-child(2) {
-		background-image: url('img_files/ocean2.png');
-		background-size: cover;
-		width: 122px;
-		height: 194px;
-	
-		
-}
-*/
-
-
-
-
-
-
-
-
-
 
 .mermaid { /* matches 7 */
 		background-image: url('img_files/mermaid_ocean.png');
-		background-size: cover;
 		width: 122px;
 		height: 194px;
 		align-items: center;
@@ -98,20 +67,28 @@ body {
 
 .jellyfish { /* matches 2 */
 	background-image: url('img_files/jellyfish.png');
-	background-size: cover;
 	width: 122px;
 	height: 194px;
 }
 
 .starfish {
 	background-image: url('img_files/starfish.png');
-	background-size: cover;
+	width: 122px;
+	height: 194px;
+}
+.seaturtle {
+	background-image: url('img_files/sea-turtle.png');
 	width: 122px;
 	height: 194px;
 }
 
+.clownfish {
+	background-image: url('img_files/clownfish.png');
+}
+
 
 .card-back {
+
 	background-image: url('img_files/ocean2.png');
 	background-size: cover;
 	width: 122px;
@@ -128,7 +105,9 @@ body {
 	width: 150px;
 	height: 125px;
 	border-radius: 10px;
-	/*margin-right: 300px;*/
+	font-family: 'Piedra', cursive;
+	font-color: rgb(237, 201, 175);
+
 	
 	
 }
