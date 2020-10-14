@@ -4,7 +4,7 @@
 This is a memory card game, made with HTML, Javascript/Jquery and styled with CSS.
 
 
-**Access to game** Try the game here: https://lizacu.github.io/project-memorycardgame/
+**Access to game** Try the game here: https://lizacu.github.io/memorycardgame/
 
 
 
