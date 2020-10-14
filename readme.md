@@ -10,7 +10,7 @@ This is a memory card game, made with HTML, Javascript/Jquery and styled with CS
 
 **Wireframe**
 
-![Wireframe](project_1/img_files/wireframe.png)
+![Wireframe](project_1/img_files/Wireframe.png)
 
 
 
