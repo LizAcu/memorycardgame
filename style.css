@@ -11,12 +11,13 @@ body {
 	display: flex;
 	justify-content: space-around; 
 	border: 1px solid black;
-	background-color: skyblue;
+	background-color: rgb(4, 72, 191);
 	width: 1050px;
 	height: 500px;
 	border-radius: 15px;
 	opacity: .9;
 	margin: auto;
+
 
 
 }
@@ -35,35 +36,37 @@ body {
 }
 */
 
+.card {
+		border: 1px solid black;
+	background-repeat: no-repeat;
+	grid-template-columns: 60px 60px;
+	grid-row-gap: 1em;
+	display: grid;
+	grid-row: 1 / span: 2;
+	border-radius: 15px;
+	height: 12em;
+	max-width: 100%;
+	/*width: 122px;*/
+	/*height: 194px;*/
+}
 
-.card:nth-child(1) { 
+.sunset {
 	background-image: url('img_files/ocean.png');
-	background-size: contain;
-	width: 122px;
-	height: 194px;
-
-/*1*/
-
-}
-.card-back:nth-child(1) {
-	background-image: url('img_files/ocean2.png');
 	background-size: cover;
-	width: 122px;
-	height: 194px;
-
-	
 }
 
-.card:nth-child(2) { 
+
+
+.fish { 
 		background-image: url('img_files/fish_ocean.png');
-		background-size: contain;
+		background-size: cover;
 		width: 122px;
 		height: 194px;
 
 		
 }
 
-.card-back:nth-child(2) {
+/*.card-back:nth-child(2) {
 		background-image: url('img_files/ocean2.png');
 		background-size: cover;
 		width: 122px;
@@ -71,125 +74,66 @@ body {
 	
 		
 }
+*/
 
 
 
 
 
-.card:nth-child(3) {
-		background-image: url('img_files/ocean.png');
-		background-size: contain;
-		width: 122px;
-		height: 194px;
-
-}
-
-.card-back:nth-child(3) { /* match to card 1 */
-		background-image: url('img_files/ocean2.png');
-		background-size: cover;
-		width: 122px;
-		height: 194px;
-
-}
 
 
 
 
-.card:nth-child(4) { /* matches 7 */
+
+.mermaid { /* matches 7 */
 		background-image: url('img_files/mermaid_ocean.png');
-		background-size: contain;
+		background-size: cover;
 		width: 122px;
 		height: 194px;
 		align-items: center;
 	}
 
 
-.card-back:nth-child(4) {
-		background-image: url('img_files/ocean2.png');
-		background-size: cover;
-		width: 122px;
-		height: 194px;
-	}
 
 
-
-.card:nth-child(5) { /* matches 2 */
+.jellyfish { /* matches 2 */
 	background-image: url('img_files/jellyfish.png');
-	background-size: contain;
-	width: 122px;
-	height: 194px;
-}
-.card-back:nth-child(5) {
-		background-image: url('img_files/ocean2.png');
-		background-size: cover;
-		width: 122px;
-		height: 194px;
-
-
-
-}
-
-
-
-.card:nth-child(6) { /* matches 2 */
-	background-image: url('img_files/fish_ocean.png');
-	background-size: contain;
+	background-size: cover;
 	width: 122px;
 	height: 194px;
 }
 
-.card-back:nth-child(6) {
-	background-image: url('img_files/ocean2.png');
+.starfish {
+	background-image: url('img_files/starfish.png');
 	background-size: cover;
 	width: 122px;
 	height: 194px;
 }
 
 
-.card:nth-child(7) { /* matches 4 */
-		background-image: url('img_files/mermaid_ocean.png');
-		background-size: contain;
-		width: 122px;
-		height: 194px;
-
-}
-
-
-.card-back:nth-child(7) {
+.card-back {
 	background-image: url('img_files/ocean2.png');
-		background-size: cover;
-		width: 122px;
-		height: 194px;
-}
-
-
-
- 
-.card:nth-child(8) { /* matches 2 */
-	background-image: url('img_files/jellyfish.png');
-	background-size: contain;
+	background-size: cover;
 	width: 122px;
 	height: 194px;
-}
-.card-back:nth-child(8) {
-		background-image: url('img_files/ocean2.png');
-		background-size: cover;
-		width: 122px;
-		height: 194px;
+
+	
 }
 
-
-.card {
-	border: 1px solid black;
-	grid-template-columns: 60px 60px;
-	grid-row-gap: 1em;
-	display: grid;
-	border-radius: 15px;
-	height: 12em;
-	max-width: 100%;
-
-
+.match-container {
+	margin: auto;
+	text-align: center;
+	font-size: 35px;
+	background-image: url('img_files/starfish.png') ;
+	width: 150px;
+	height: 125px;
+	border-radius: 10px;
+	/*margin-right: 300px;*/
+	
+	
 }
+
+
 
 #start-button {
 	margin: 0 auto;
