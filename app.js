@@ -20,7 +20,7 @@ const playHand = () => {
 
 
 let matches = 0
-let nonMatch = 0
+let misMatch = 0
 
 const matchCards = () => {
 	console.log('I will check your cards!', handOfCards)
@@ -39,10 +39,10 @@ const matchCards = () => {
 		$('body').append(`<h2>It's a match!</h2>`)
 	} else {
 		$('body').append(`<h2>It's NOT a match!</h2>`)
-		nonMatch++
-		console.log(nonMatch)
+		misMatch++
+		console.log(misMatch)
 	}
-		if (nonMatch === 3) {
+		if (misMatch === 3) {
 			gameLose()
 		
 
@@ -64,7 +64,6 @@ const gameLose = () => {
 
 
 
-
 $(() => {
 
 
@@ -78,7 +77,10 @@ $(() => {
 		if(timeleft <= 0){
     	  clearInterval(startTimer);
     	  document.getElementById("countdown").innerHTML = "Time's up!";
-  	    } else {
+    	  $('#start-button').toggle();
+    	  $('.container').toggle();
+    	  $('h2').toggle();
+    	    } else {
           document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
         }
         timeleft -= 1;
